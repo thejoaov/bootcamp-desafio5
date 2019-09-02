@@ -89,13 +89,14 @@ export default class Main extends Component {
     return (
       <Container>
         <h1>
-          <FaGithubAlt />
+          <FaGithubAlt size={50} />
           Repositórios
         </h1>
+
         <Form onSubmit={this.handleSubmit} error={error}>
           <input
             type="text"
-            placeholder="Adicionar repositório"
+            placeholder="Dono/repositório"
             value={newRepo}
             onChange={this.handleInputChange}
           />
